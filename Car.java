@@ -15,7 +15,7 @@ public class Car  {
 		parts.add(b);
 		parts.add(c);
 		
-		
+		System.out.println(parts);
 	}
 	
 }
