@@ -1,11 +1,5 @@
 
-interface Functional {
-	
-	public void function();
-	
-}
-
-public class CarPart extends Car implements Functional {
+public class CarPart extends Car  {
 	
 	public void function() {}
 	

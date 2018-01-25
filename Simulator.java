@@ -7,7 +7,7 @@ public class Simulator {
 		
 		chevy.run();
 		
-		System.out.println();
+		System.out.println(chevy);
 	}
 
 }

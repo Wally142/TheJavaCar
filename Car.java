@@ -1,7 +1,15 @@
-
+import java.util.Iterator;
 import java.util.ArrayList;
 
-public class Car  {
+interface Functional {
+	
+	public void function();
+	
+}
+
+public class Car implements Functional  {
+	
+	public void function() {}
 
 	public void run() {
 	
@@ -15,7 +23,14 @@ public class Car  {
 		parts.add(b);
 		parts.add(c);
 		
-		System.out.println(parts);
+Iterator<Object> it = parts.iterator();
+
+while(it.hasNext()){
+    System.out.println(it.next());
+}
+
+System.out.println(it.next());
+		
 	}
 	
 }
