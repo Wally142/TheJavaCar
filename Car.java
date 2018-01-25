@@ -1,4 +1,4 @@
-import java.util.Iterator;
+
 import java.util.ArrayList;
 
 interface Functional {
@@ -16,20 +16,21 @@ public class Car implements Functional  {
 		ArrayList<Object> parts = new ArrayList<Object>();
 		
 		CarPart a = new Engine();
+		a.function();
 		CarPart b = new FuelTank();
+		b.function();
 		CarPart c = new Wheels();
+		c.function();
 		
 		parts.add(a);
 		parts.add(b);
 		parts.add(c);
 		
-Iterator<Object> it = parts.iterator();
+		for (Object it : parts) { 		      
+	           System.out.println(it); 		
+	      }
 
-while(it.hasNext()){
-    System.out.println(it.next());
-}
 
-System.out.println(it.next());
 		
 	}
 	

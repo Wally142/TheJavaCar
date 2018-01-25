@@ -5,7 +5,7 @@ public class Wheels extends CarPart {
 	String color = "Black";
 	
 	public void function() {
-		System.out.println("Most cars have" + wheels + "wheels" + "and" + color + "tires!");
+		System.out.println("These are well made tires!");
 	}
 
 }
